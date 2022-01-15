@@ -25,7 +25,7 @@ exports.logIn = async (req, res) => {
       } else {
         throw new Error("Password error");
       }
-    }
+  }
   } catch (error) {
     console.log(error);
     res.status(500).send({ message: error.message });
